@@ -14,7 +14,7 @@ public class GuestController {
     private GuestRepository repository;
 
     @GetMapping
-    public Iterable<Guest> getRooms() {
+    public Iterable<Guest> getGuests() {
         return this.repository.findAll();
     }
 }

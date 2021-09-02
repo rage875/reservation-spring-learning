@@ -14,7 +14,7 @@ public class ReservationController {
     private ReservationRepository repository;
 
     @GetMapping
-    public Iterable<Reservation> getRooms() {
+    public Iterable<Reservation> getReservations() {
         return this.repository.findAll();
     }
 }
